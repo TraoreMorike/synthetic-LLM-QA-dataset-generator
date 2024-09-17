@@ -1,0 +1,17 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore environment variables file
+*.env
+
+# Ignore output directories
+output/
+inputs/
+
+# Ignore inputs documents wrongfully placed
+*.pdf
+*.docx
+*.xslx
+*.csv
+

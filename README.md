@@ -26,11 +26,25 @@ Install dependencies :
 
  ## Usage :
 
-1. Run the script in the command line: `synth-openai.py`
-2. The script will extract text from all PDF, Excel, and Word files in the "inputs" directory.
+1. If not already done, create a .env file to add you OPENAI API key and base url.
+```sh
+# .env file
+
+# Setup your OpenAI API key and base URL HERE :
+# You can get your API key from https://platform.openai.com/account/api-keys
+# You can get your base URL from https://platform.openai.com/docs/guides/quickstart
+
+# CAUTION : YOUR API KEY IS A SECRET. DO NOT SHARE IT WITH ANYONE.
+
+# When using Ollama locally, you can use the following default values :
+OPENAI_API_KEY="ollama"
+OPENAI_API_BASE_URL="http://localhost:11434/v1"
+```
+2. Run the script in the command line: `main.py`
+2. The script will extract text from all PDF, Excel, and Word files in the "docs" directory.
 3. It will process the extracted text to generate questions and answers for each file.
 4. The generated responses will be saved in JSON format and converted to CSV.
-5. The output files (JSON and CSV) will be moved to an "outputs" directory with subdirectories for each input file.
+5. The output files (JSON and CSV) will be moved to an "output" directory with subdirectories for each input file.
 
  ## Notes:
 
@@ -38,10 +52,5 @@ Install dependencies :
 * This script assumes that all input files are in the same directory as the script. You may need to modify the script if you want to process files from different directories.
 * The generated questions and answers are based on the text content of each file, so the quality of the output depends on the quality of the extracted text and the model selected.
 
-  ## TODO :
-* Use argparse to easily select LLM model,tuning parameter and chunk size.
-* Use arparse to pass OpenAI api key.
-* Add license (currently MIT).
-
 **License:**
-TODO
+MIT License
