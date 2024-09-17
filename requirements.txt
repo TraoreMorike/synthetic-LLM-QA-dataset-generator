@@ -1,5 +1,9 @@
 docx==0.2.4
-openai==1.44.1
+ollama==0.3.3
+openai==1.45.1
 pandas==2.2.2
+prompt_toolkit==3.0.47
 PyPDF2==3.0.1
+python-dotenv==1.0.1
+python_docx==1.1.2
 tqdm==4.66.4
