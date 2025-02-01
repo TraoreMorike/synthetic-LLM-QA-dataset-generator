@@ -52,5 +52,9 @@ OPENAI_API_BASE_URL="http://localhost:11434/v1"
 * This script assumes that all input files are in the same directory as the script. You may need to modify the script if you want to process files from different directories.
 * The generated questions and answers are based on the text content of each file, so the quality of the output depends on the quality of the extracted text and the model selected.
 
+ ## Known issue:
+
+ * Depending on the "Q&A model" used, some might generate incorrect JSON format that cannot be fixed by the "fix-model" this creating an infinite loop.  
+
 **License:**
 MIT License
